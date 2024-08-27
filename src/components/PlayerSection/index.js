@@ -1,4 +1,3 @@
-import React from 'react'
 import ReactPlayer from 'react-player'
 import {formatDistanceToNow} from 'date-fns'
 import {AiOutlineLike, AiOutlineDislike} from 'react-icons/ai'
@@ -50,7 +49,7 @@ const PlayVideoView = ({
 
         return (
           <VideoPlayer>
-            <ReactPlayer url={videoDetails.videoUrl} controls width='100%' />
+            <ReactPlayer url={videoDetails.videoUrl} controls width="100%" />
             <PlayVideoTitle color={textColor}>
               {videoDetails.title}
             </PlayVideoTitle>
@@ -63,7 +62,7 @@ const PlayVideoView = ({
               <PlaySocialButtonsContainer>
                 <BtnContainer>
                   <SocialButton
-                    type='button'
+                    type="button"
                     color={likeIconColor}
                     onClick={clickLiked}
                   >
@@ -73,7 +72,7 @@ const PlayVideoView = ({
                 </BtnContainer>
                 <BtnContainer>
                   <SocialButton
-                    type='button'
+                    type="button"
                     color={dislikeIconColor}
                     onClick={clickDisLiked}
                   >
@@ -83,7 +82,7 @@ const PlayVideoView = ({
                 </BtnContainer>
                 <BtnContainer>
                   <SocialButton
-                    type='button'
+                    type="button"
                     color={saveIconColor}
                     onClick={onClickSave}
                   >
@@ -97,7 +96,7 @@ const PlayVideoView = ({
             <ChannelContainer>
               <ChannelImage
                 src={videoDetails.profileImageUrl}
-                alt='channel logo'
+                alt="channel logo"
               />
               <ChannelInfo>
                 <ChannelName color={textColor}>{videoDetails.name}</ChannelName>
